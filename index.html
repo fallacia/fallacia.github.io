@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Logical Fallacies Database</h1>
+
+  <ul class="post-list">
+    {% for fallacy in site.fallacies %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ fallacy.url | prepend: site.baseurl }}">{{ fallacy.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
